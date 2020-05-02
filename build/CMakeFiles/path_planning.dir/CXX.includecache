@@ -855,4 +855,16 @@ helpers.h
 /home/ahmad/SDC/CarND-Path-Planning-Project/src/helpers.h
 json.hpp
 /home/ahmad/SDC/CarND-Path-Planning-Project/src/json.hpp
+spline.h
+/home/ahmad/SDC/CarND-Path-Planning-Project/src/spline.h
+
+/home/ahmad/SDC/CarND-Path-Planning-Project/src/spline.h
+cstdio
+-
+cassert
+-
+vector
+-
+algorithm
+-
 
