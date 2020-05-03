@@ -88,3 +88,8 @@ A really helpful resource for doing this project and creating smooth trajectorie
 ---
 
 ## Reflection
+
+The implementation of the path planning is within the h.onMessage lambda function. Maximum speed limit, Maximum acceleration limit, and gap from the front car can be read from the command line and passed as reference to the lambda function.
+
+Inside the ![main.cpp][main] the line-numbers `93-99` determine the lane number of the car on the road. Line-number `107-138` are used to detect obstacles (other cars) on the same side of the road. It determines the lane-numbers of the obstacles and set one of the three obstacle flags (front, left, right) based upon car s and d values (freenet coordinates).
+Line-numbers `140-155` calcualates the car speed based upon the obstacle information. Line-numbers `157-183` are used for trajectory generation. Four reference waypoints are created for spline interpolation from line `186-197` while the actual filtered spline points are genearted between line `217` to `235`.
